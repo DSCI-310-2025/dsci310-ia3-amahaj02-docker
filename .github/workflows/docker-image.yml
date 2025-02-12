@@ -27,7 +27,7 @@ jobs:
         password: ${{ secrets.xsuj_72bA.66P!L }}
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag dsci310-ia3-<USERNAME>-docker:$(date +%s)
+      run: docker build . --file Dockerfile --tag dsci310-ia3-amahaj02-docker:$(date +%s)
 
     - name: Push the Docker image to DockerHub
-      run: docker push dsci310-ia3-<USERNAME>-docker:$(date +%s)
+      run: docker push dsci310-ia3-amahaj02-docker:$(date +%s)

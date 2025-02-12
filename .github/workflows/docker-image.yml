@@ -27,7 +27,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag aaravmahajan912/dsci310-ia3-amahaj02-docker:$(date +%s)
+      run: docker build .  Dockerfile --tag aaravmahajan912/dsci310-ia3-amahaj02-docker:latest
 
     - name: Push the Docker image to DockerHub
-      run: docker push aaravmahajan912/dsci310-ia3-amahaj02-docker:$(date +%s)
+      run: docker push aaravmahajan912/dsci310-ia3-amahaj02-docker:latest

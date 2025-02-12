@@ -30,4 +30,4 @@ jobs:
       run: docker build . --file Dockerfile --tag aaravmahajan912/dockerfile-practice:latest
 
     - name: Push the Docker image to DockerHub
-      run: docker push aaravmahajan912/aaravmahajan912/dockerfile-practice:latest
+      run: docker push aaravmahajan912/dockerfile-practice:latest
